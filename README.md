@@ -12,6 +12,7 @@ Python3: to synthesize audio using Google Text to Speech API
 
 ## Example
 Awesome blog post: https://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/
+
 Listen to said blog post: https://playthis.link/https://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/
 
 
