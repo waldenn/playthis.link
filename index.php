@@ -8,6 +8,13 @@ if ($url == '') {
 } elseif (filter_var($url, FILTER_VALIDATE_URL) === false) {
   echo 'This does not look like a good URL!';
   exit;
+} else {
+  $parsedUrl = parse_url($url);
+
+  if ($parsedUrl === false || !in_array($parsedUrl['scheme'], ['http', 'https'])) {
+    echo 'This does not look like a good URL!';
+    exit;
+  }
 }
 
 $out_file = md5($url) . '.mp3';
